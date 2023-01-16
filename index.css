@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#searcharea {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(89, 89, 89);
+}
+
+img {
+    position: absolute;
+    width:100px;
+    left: 100px;
+    mix-blend-mode: color-burn;
+}
+
+#location {
+    width: 40%;
+    height: 40px;
+    margin: 30px;
+    padding-left: 25px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    caret-color: white;
+}
+
+#location::placeholder {
+    color: rgb(206, 206, 206)
+}
+
+#location:focus {
+    outline: none;
+}
+
+#city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 50px
+}
+
+#cityplace {
+    caret-color: transparent;
+}
+
+#city > h3 {
+    font-size: 30px;
+    text-shadow: 4px 4px 5px black;
+}
+
+#widgetarea {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#widget {
+    margin-top: 0px;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(0,0,0,0.4);
+    backdrop-filter: blur(30px) ;
+    border-radius: 25px;
+    caret-color: transparent;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#temp > h1 {
+    font-size: 100px;
+}
+
+span {
+    font-size: 40px;
+    vertical-align: top;
+}
+
+#stats {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 60px;
+    border-left: 1px solid white
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#forecastarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forecast {
+    width: 180px;
+    height: 250px;
+    background-color: rgb(0,0,0,0.8);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 25px
+}
+
+.forecast > h1 {
+    font-weight: lighter;
+}
